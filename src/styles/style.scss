@@ -1,0 +1,44 @@
+@use "settings/settings.index" as *;
+
+
+
+body{
+    background-color: #27292E;
+}
+
+.wrapper{
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+.adola-avatar{
+    font-size: 1vw;
+    height: 4em;
+    width: 4em;
+    border-radius: 3em;
+    // background-color: black;
+    position: relative;
+
+    &-dot{
+        height: 2em;
+        width: 2em;
+        border-radius: 2em;
+        position: absolute;
+        filter: blur(0.6em);
+        &--blue{
+            top: 0;
+            left: 50%;
+            background-color: #0066FF;
+        }
+        &--green{
+            top: 50%;
+            left: 0;
+            background-color: #50DDC4;
+        }
+        &--purple{
+            top: 50%;
+            right: 0;
+            background-color:  #8400ff;
+        }
+    }
+}
